@@ -1,0 +1,216 @@
+/*!
+* Responsive CSS v1.0
+*
+* Copyright 2013 Riki Pribadi (@flakeware)
+* http://flakeware.com
+*
+* Released under the MIT license
+*/
+
+
+/*****************************************************************************
+Note
+----
+
+    IPAD 2
+    - landscape mode: 979px < width < 1200px 
+    - portrait  mode: 768px < width <= 979px 
+
+    IPHONE 4
+    - landscape mode: 480px <= width 
+    - portrait  mode: 480px <= width 
+
+    S3
+    - landscape mode: 480px < width <= 767px
+    - portrait  mode:         width <= 480px 
+
+
+Available Classes
+-----------------
+
+    * .visible-large-screen
+    * .visible-tablet-landscape
+    * .visible-tablet-portrait
+    * .visible-phone-landscape
+    * .visible-phone-portrait
+    
+    * .visible-below-large-screen
+    * .visible-below-tablet-landscape
+    * .visible-below-tablet-portrait
+
+    * .hidden-large-screen
+    * .hidden-tablet-landscape
+    * .hidden-tablet-portrait
+    * .hidden-phone-landscape
+    * .hidden-phone-portrait
+
+    * .hidden-below-large-screen
+    * .hidden-below-tablet-landscape
+    * .hidden-below-tablet-portrait
+*****************************************************************************/
+
+
+.visible-large-screen, .visible-tablet-landscape, .visible-tablet-portrait,
+.visible-phone-landscape, .visible-phone-portrait{
+    display: none !important;
+}
+
+.visible-below-large-screen, .visible-below-tablet-landscape,
+.visible-below-tablet-portrait {
+    display: none !important;
+}
+
+.hidden-large-screen, .hidden-tablet-landscape, .hidden-tablet-portrait,
+.hidden-phone-landscape, .hidden-phone-portrait {
+    display: inherit !important;
+}
+
+td.hidden-large-screen, th.hidden-large-screen,
+td.hidden-tablet-landscape, th.hidden-tablet-landscape,
+td.hidden-tablet-portrait, th.hidden-tablet-portrait,
+td.hidden-phone-landscape, th.hidden-phone-landscape,
+td.hidden-phone-portrait, th.hidden-phone-portrait {
+    display: table-cell !important;
+}
+
+.hidden-below-large-screen, .hidden-below-tablet-landscape,
+.hidden-below-tablet-portrait {
+    display: inherit !important;
+}
+
+td.hidden-below-large-screen, th.hidden-below-large-screen,
+td.hidden-below-tablet-landscape, th.hidden-below-tablet-landscape,
+td.hidden-below-tablet-portrait, th.hidden-below-tablet-portrait {
+    display: table-cell !important;
+}
+
+/* Large screen */
+@media (min-width: 1200px) {
+    body {
+    }
+    .visible-large-screen {
+        display: inherit !important;
+    }
+
+    td.visible-large-screen, th.visible-large-screen {
+        display: table-cell !important;
+    }
+
+    .hidden-large-screen, td.hidden-large-screen, th.hidden-large-screen {
+        display: none !important;
+    }
+}
+     
+/* Landscape tablet + Portrait tablet + Landscape phone + Portrait phone */
+@media (max-width: 1199px) {
+    body {
+    }
+    .visible-below-large-screen {
+        display: inherit !important;
+    }
+    
+    td.visible-below-large-screen, th.visible-below-large-screen {
+        display: table-cell !important;
+    }
+
+    .hidden-below-large-screen, td.hidden-below-large-screen, th.hidden-below-large-screen {
+        display: none !important;
+    }
+}
+
+/* Landscape tablet */
+@media (min-width: 980px) and (max-width: 1199px) {
+    .visible-tablet-landscape {
+        display: inherit !important;
+    }
+
+    td.visible-tablet-landscape, th.visible-tablet-landscape {
+        display: table-cell !important;
+    }
+
+    .hidden-tablet-landscape, td.hidden-tablet-landscape, td.hidden-tablet-landscape {
+        display: none !important;
+    }
+}
+
+/* Portrait tablet + Landscape phone + Portrait phone */
+@media (max-width: 979px) {
+    body {
+    }
+    .visible-below-tablet-landscape {
+        display: inherit !important;
+    }
+
+    td.visible-below-tablet-landscape, th.visible-below-tablet-landscape {
+        display: table-cell !important;
+    }
+
+    .hidden-below-tablet-landscape, td.hidden-below-tablet-landscape, th.hidden-below-tablet-landscape {
+        display: none !important;
+    }
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+    .visible-tablet-portrait {
+        display: inherit !important;
+    }
+
+    td.visible-tablet-portrait, th.visible-tablet-portrait {
+        display: table-cell !important;
+    }
+
+    .hidden-tablet-portrait, td.hidden-tablet-portrait, th.hidden-tablet-portrait {
+        display: none !important;
+    }
+}
+     
+/* Landscape phone + Portrait phone */
+@media (max-width: 767px) {
+    body {
+    }
+    .visible-below-tablet-portrait {
+        display: inherit !important;
+    }
+    
+    td.visible-below-tablet-portrait, th.visible-below-tablet-portrait {
+        display: table-cell !important;
+    }
+
+    .hidden-below-tablet-portrait, td.hidden-below-tablet-portrait, th.hidden-below-tablet-portrait {
+        display: none !important;
+    }
+}
+
+/* Landscape phone */
+@media (min-width: 481px) and (max-width: 767px) {
+    .visible-phone-landscape {
+        display: inherit !important;
+    }
+
+    td.visible-phone-landscape, th.visible-phone-landscape {
+        display: table-cell !important;
+    }
+
+    .hidden-phone-landscape, td.hidden-phone-landscape, th.hidden-phone-landscape {
+        display: none !important;
+    }
+}
+
+/* Portrait phones */
+@media (max-width: 480px) {
+    body {
+    }
+    .visible-phone-portrait {
+        display: inherit !important;
+    }
+
+    td.visible-phone-portrait, th.visible-phone-portrait {
+        display: table-cell !important;
+    }
+
+    .hidden-phone-portrait, td.hidden-phone-portrait, th.hidden-phone-portrait {
+        display: none !important;
+    }
+}
+
