@@ -1,4 +1,4 @@
-Copyright (c) 2013 Riki Pribadi (@flakeware)
+Copyright (c) 2013 Riki Pribadi
 https://github.com/rpribadi/responsive-css
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
