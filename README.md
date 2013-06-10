@@ -36,7 +36,7 @@ Available Classes
     .visible-below-large-screen
     .visible-below-tablet-landscape
     .visible-below-tablet-portrait
-    .visible-below-phone-lanscape
+    .visible-below-phone-landscape
 
     .hidden-large-screen
     .hidden-tablet-landscape

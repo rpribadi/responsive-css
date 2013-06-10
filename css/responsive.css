@@ -37,6 +37,7 @@ Available Classes
     * .visible-below-large-screen
     * .visible-below-tablet-landscape
     * .visible-below-tablet-portrait
+    * .visible-below-phone-landscape
 
     * .hidden-large-screen
     * .hidden-tablet-landscape
@@ -47,6 +48,7 @@ Available Classes
     * .hidden-below-large-screen
     * .hidden-below-tablet-landscape
     * .hidden-below-tablet-portrait
+    * .hidden-below-phone-landscape
 *****************************************************************************/
 
 
@@ -56,7 +58,7 @@ Available Classes
 }
 
 .visible-below-large-screen, .visible-below-tablet-landscape,
-.visible-below-tablet-portrait {
+.visible-below-tablet-portrait, .visible-below-phone-landscape {
     display: none !important;
 }
 
@@ -74,7 +76,7 @@ td.hidden-phone-portrait, th.hidden-phone-portrait {
 }
 
 .hidden-below-large-screen, .hidden-below-tablet-landscape,
-.hidden-below-tablet-portrait {
+.hidden-below-tablet-portrait, hidden-below-phone-landscape {
     display: inherit !important;
 }
 
@@ -201,15 +203,17 @@ td.hidden-below-tablet-portrait, th.hidden-below-tablet-portrait {
 @media (max-width: 480px) {
     body {
     }
-    .visible-phone-portrait {
+    .visible-phone-portrait, .visible-below-phone-landscape {
         display: inherit !important;
     }
 
-    td.visible-phone-portrait, th.visible-phone-portrait {
+    td.visible-phone-portrait, th.visible-phone-portrait,
+    td.visible-below-phone-landscape, th.visible-below-phone-landscape {
         display: table-cell !important;
     }
 
-    .hidden-phone-portrait, td.hidden-phone-portrait, th.hidden-phone-portrait {
+    .hidden-phone-portrait, .hidden-below-phone-landscape,
+    td.hidden-phone-portrait, th.hidden-phone-portrait {
         display: none !important;
     }
 }
