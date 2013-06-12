@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Example 1 - Table</title>
+        <link type="text/css" rel="stylesheet" href="../css/responsive.css" />
+    </head>
+    <body>
+        <h1>Responsive Table</h1>
+        <em>Resize your browser accordingly to see responsive effect.</em>
+        <h2>Table Row</h2>
+        <table border="1">
+            <tr>
+                <td>1.</td>
+                <td>Row will always be visible</td>
+            </tr>
+            <tr class="hidden-below-phone-landscape">
+                <td>2.</td>
+                <td>Row will be hidden below phone landscape</td>
+            </tr>
+            <tr class="hidden-below-tablet-portrait">
+                <td>3.</td>
+                <td>Row will be hidden below tablet portrait</td>
+            </tr>
+            <tr class="hidden-below-tablet-landscape">
+                <td>4.</td>
+                <td>Row will be hidden below tablet landscape</td>
+            </tr>
+            <tr class="hidden-below-large-screen">
+                <td>5.</td>
+                <td>Row will be hidden below large screen</td>
+            </tr>
+        </table>
+
+        <h2>Table Column</h2>
+        <table border="1">
+            <tr>
+                <th>Col 1</th>
+                <th class="hidden-below-phone-landscape">Col 2</th>
+                <th class="hidden-below-tablet-portrait">Col 3</th>
+                <th class="hidden-below-tablet-landscape">Col 4</th>
+                <th class="hidden-below-large-screen">Col 5</th>
+            </tr>
+            <tr>
+                <td>Column will always be visible</td>
+                <td class="hidden-below-phone-landscape">Column will be hidden below phone landscape</td>
+                <td class="hidden-below-tablet-portrait">Column will be hidden below tablet portrait</td>
+                <td class="hidden-below-tablet-landscape">Column will be hidden below tablet landscape</td>
+                <td class="hidden-below-large-screen">Column will be hidden below large screen</td>
+            </tr>
+        </table>
+    </body>
+</html>
