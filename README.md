@@ -1,28 +1,67 @@
 Responsive CSS
 ==============
 
-Common css classes for responsive design (adopted from twitter bootstrap).
+Common css classes for responsive design (adopted from [Twitter Bootstrap](http://twitter.github.io/bootstrap/scaffolding.html#responsive)).
 
-Screen Definition
------------------
+Usage
+-----
 
-* Large Screen
-    > min-width: 1200px
+Simply include <code>responsive.css</code> to your HTML file
 
-* Tablet Landscape <br />
-    > max-width: 1199px<br />
-    > min-width: 980px
+```html
+<html>
+    <head>
+        <link href="/static/css/responsive.css" rel="stylesheet">
+	    <link href="/static/css/your_style.css" rel="stylesheet">
+    </head>
+    <body>
+        .
+        .
+    </body>
+</body>
+```
 
-* Tablet Portrait<br />
-    > max-width: 979px<br />
-    > min-width: 768px
+### Example 1
 
-* Phone Landscape<br />
-    > max-width: 767px<br />
-    > min-width: 481px<br />
+```html
+<p class='visible-large-screen'>Only visible for large screen</p>
+<p class='visible-tablet-landscape'>Only visible for tablet landscape</p>
+<p class='visible-tablet-portrait'>Only visible for tablet portrait</p>
+<p class='visible-phone-landscape'>Only visible for phone landscape</p>
+<p class='visible-phone-portrait'>Only visible for phone portrait</p>
+```
 
-* Phone Portrait<br />
-    > max-width: 480px
+### Example 2
+
+```html
+<table>
+    <tr>
+        <th>Col 1</th>
+        <th class='hidden-below-phone-landscape'>Col 2</th>
+        <th class='hidden-below-tablet-portrait'>Col 3</th>
+        <th class='hidden-below-tablet-landscape'>Col 4</th>
+        <th class='hidden-below-large-screen'>Col 5</th>
+    </tr>
+    <tr>
+        <td>Always Visible</td>
+        <td class='hidden-below-phone-landscape'>Hidden Below Phone Landscape</td>
+        <td class='hidden-below-tablet-portrait'>Hidden Below Table Portrait</td>
+        <td class='hidden-below-tablet-landscape'>Hidden Below Tablet Landscape</td>
+        <td class='hidden-below-large-screen'>Hidden Below Large Screen</td>
+    <tr>
+</table>
+```
+
+### Example 3
+
+```html
+<div class='hidden-below-tablet-portrait'>
+    <p>Visible for large screen, tablet landscape & tablet portrait.</p>
+</div>
+<div class='visible-below-tablet-portrait'>
+    <p>Visible for phone landscape & phone portrait.</p>
+</div>
+```
 
 Available Classes
 -----------------
@@ -48,6 +87,41 @@ Available Classes
     .hidden-below-tablet-landscape
     .hidden-below-tablet-portrait
     .hidden-below-phone-landscape
+
+Screen Size Category Definition
+-------------------------------
+
+* Large Screen
+    > min-width: 1200px
+
+* Tablet Landscape <br />
+    > max-width: 1199px<br />
+    > min-width: 980px
+
+* Tablet Portrait<br />
+    > max-width: 979px<br />
+    > min-width: 768px
+
+* Phone Landscape<br />
+    > max-width: 767px<br />
+    > min-width: 481px<br />
+
+* Phone Portrait<br />
+    > max-width: 480px
+
+Mobile Device Test Result
+-------------------------
+
+Mobile Device           |Landscape Mode     |Portrait Mode
+------------------------|-------------------|-------------
+iPad2                   |Tablet Landscape   |Tablet Portrait
+Samsung Galaxy Tab      |Phone Landscape    |Phone Portrait
+Samsung Galaxy Tab 2    |Tablet Landscape   |Phone Landscape
+iPhone4                 |Phone Portrait     |Phone Portrait
+iPhone5                 |Phone Landscape    |Phone Portrait
+Samsung Galaxy SIII     |Phone Landscape    |Phone Portrait
+Samsung Galaxy SIV      |Phone Landscape    |Phone Portrait
+Samsung Galaxy Note II  |Phone Landscape    |Phone Portrait
 
 
 <code>visible-*</code> Classes
@@ -110,6 +184,7 @@ These classes will set elements to be hidden for a range of screen types.
 * <code>.hidden-below-large-screen</code> is equal to <code>.visible-large-screen</code><br />
 * <code>.hidden-below-phone-landscape</code> is equal to <code>.hidden-phone-portrait</code>
 
+
 Author
 ------
 
@@ -120,4 +195,4 @@ Riki Pribadi
 Questions?
 ----------
 
-if you have any questions, please feel free to contact the author.
+If you have any questions, please feel free to contact the author.
