@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Example 2 - Div</title>
+        <link type="text/css" rel="stylesheet" href="../css/responsive.css" />
+        <style>
+            div {
+                width: 100%;
+                height: 100px;
+                background-color: black;
+            }
+            div.hidden-below-phone-landscape {
+                background-color: red;
+            }
+            div.hidden-below-tablet-portrait {
+                background-color: green;
+            }
+            div.hidden-below-tablet-landscape {
+                background-color: blue;
+            }
+            div.hidden-below-large-screen {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Responsive Div</h1>
+        <p><em>Resize your browser accordingly to see responsive effect.</em></p>
+
+        <div>Normal</div>
+        <div class="hidden-below-phone-landscape"></div>
+        <div class="hidden-below-tablet-portrait"></div>
+        <div class="hidden-below-tablet-landscape"></div>
+        <div class="hidden-below-large-screen"></div>
+    </body>
+</html>
