@@ -9,25 +9,8 @@
 
 
 /*****************************************************************************
-Note
-----
-
-    IPAD 2
-    - landscape mode: 979px < width < 1200px 
-    - portrait  mode: 768px < width <= 979px 
-
-    IPHONE 4
-    - landscape mode: 480px <= width 
-    - portrait  mode: 480px <= width 
-
-    S3
-    - landscape mode: 480px < width <= 767px
-    - portrait  mode:         width <= 480px 
-
-
 Available Classes
 -----------------
-
     * .visible-large-screen
     * .visible-tablet-landscape
     * .visible-tablet-portrait

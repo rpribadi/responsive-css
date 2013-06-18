@@ -1,7 +1,13 @@
 Responsive CSS
 ==============
 
-Common css classes for responsive design (adopted from [Twitter Bootstrap](http://twitter.github.io/bootstrap/scaffolding.html#responsive)).
+A set of utility CSS classes for responsive web design (adopted from [Twitter Bootstrap](http://twitter.github.io/bootstrap/scaffolding.html#responsive)). It introduces 5 screen size categories: 
+
+* Large Screen
+* Tablet Landscape
+* Tablet Portrait
+* Phone Landscape
+* Phone Portrait
 
 Usage
 -----
@@ -109,22 +115,13 @@ Screen Size Category Definition
 * Phone Portrait<br />
     > max-width: 480px
 
-Test Result for Common Mobile Devices
--------------------------------------
+Test Result
+-----------
 
 ![Test Result](img/test_result.png)
 
-Mobile Device           |Landscape Mode     |Portrait Mode
-------------------------|-------------------|-------------
-iPad2                   |Tablet Landscape   |Tablet Portrait
-Samsung Galaxy Tab      |Phone Landscape    |Phone Portrait
-Samsung Galaxy Tab 2    |Tablet Landscape   |Phone Landscape
-iPhone4                 |Phone Portrait     |Phone Portrait
-iPhone5                 |Phone Landscape    |Phone Portrait
-Samsung Galaxy SIII     |Phone Landscape    |Phone Portrait
-Samsung Galaxy SIV      |Phone Landscape    |Phone Portrait
-Samsung Galaxy Note II  |Phone Landscape    |Phone Portrait
-
+* On tablet group, only <strong>iPad 2</strong> falls <strong>perfectly</strong> under Tablet Portrait & Tablet Landscape category
+* On smartphone group, only <strong>iPhone 4</strong> falls <strong>incorrectly</strong> where its landscape mode still falls under Phone Portrait category
 
 <code>visible-*</code> Classes
 ------------------------------
