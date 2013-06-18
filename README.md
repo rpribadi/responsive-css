@@ -109,8 +109,10 @@ Screen Size Category Definition
 * Phone Portrait<br />
     > max-width: 480px
 
-Mobile Device Test Result
--------------------------
+Test Result for Common Mobile Devices
+-------------------------------------
+
+![Test Result](img/test_result.png)
 
 Mobile Device           |Landscape Mode     |Portrait Mode
 ------------------------|-------------------|-------------
